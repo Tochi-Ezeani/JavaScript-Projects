@@ -19,6 +19,7 @@ var foods = ['cheese', 'pie', 'lunch', 'breakfast'];
 // for (var eachFood of foods) {
 //   console.log(`${myString} ${eachFood}`);
 // }
+
 for (var i = 0; i < foods.length; i++) {
   if (i % 2 === 0) {
     console.log(`${myString} ${foods[i].toUpperCase()}`);
@@ -27,3 +28,4 @@ for (var i = 0; i < foods.length; i++) {
     console.log(`${myString} ${foods[i]}`);
   }
 }
+
