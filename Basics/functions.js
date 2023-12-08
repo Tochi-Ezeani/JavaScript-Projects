@@ -30,8 +30,8 @@ function returnSum(num1, num2) {
 
 // console.log(returnSum(90, 999));
 
-// console.log(Math.random());
-
+// console.log();
+// Math.random()
 function randomInt(min, max) {
   var numOfValues = max - min + 1;
   var randomNum = Math.random();
@@ -57,6 +57,8 @@ var greeting = function() {
 /************************************
  *    ARROW FUNCTION EXPRESSIONS
  ************************************/
+var greeting2 = () => "Good morning!";
+var returnSum2 = (num1, num2) => num1 + num2;
 
-// var salute = null => "Top of the morning to you lad!";
-// console.log(salute());
+// console.log(greeting2());
+// console.log(returnSum2(2, 5));
