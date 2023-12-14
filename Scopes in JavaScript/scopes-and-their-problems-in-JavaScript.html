@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scopes</title>
+  </head>
+  <body>
+    <script>
+      // var aVariable = "This is a global variable";
+
+      function scopes() {
+        oppsGlobal = "This is accidentally global";
+        var aVariable = "This is a local variable";
+        console.log(aVariable);
+      }
+
+      scopes();
+      console.log(oppsGlobal);
+      console.log(aVariable);
+    </script>
+  </body>
+</html>
