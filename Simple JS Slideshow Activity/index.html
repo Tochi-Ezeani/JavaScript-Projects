@@ -21,6 +21,16 @@
         "image4.jpg",
         "image5.jpg",
       ];
+
+      let currentImage = 0;
+
+      function nextPhoto() {
+        currentImage++;
+        document.querySelector("#myimage").src = myimages[currentImage];
+      }
+
+      
+      document.querySelector("#next").addEventListener("click", nextPhoto);
     </script>
   </body>
 </html>
