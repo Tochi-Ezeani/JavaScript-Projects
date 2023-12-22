@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Event Challenges: Challenge 24</title>
+    <script src="script24.js" defer></script>
   </head>
   <body>
     <h1>JavaScript Event Challenges: Challenge 24</h1>
@@ -11,15 +12,5 @@
       <p>Here is the first paragraph of text</p>
     </div>
     <button>Add a paragraph</button>
-    <script>
-      divElement = document.querySelector("div");
-      buttonElement = document.querySelector("button");
-
-      buttonElement.addEventListener("click", function () {
-        newPElement = document.createElement("p");
-        newPElement.innerHTML = "A new paragraph";
-        divElement.appendChild(newPElement);
-      });
-    </script>
   </body>
 </html>
