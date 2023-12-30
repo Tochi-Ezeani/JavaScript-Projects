@@ -23,5 +23,9 @@
     newSlide.className = "fadeinimg";
     newSlide.src = `slides/${myphotos[currentImage]}`;
     container.appendChild(newSlide);
+
+    if (container.children.length > 2) {
+      container.removeChild(container.children[0]);
+    }
   });
 })();
