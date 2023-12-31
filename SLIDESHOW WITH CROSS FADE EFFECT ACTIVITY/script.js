@@ -10,7 +10,7 @@
   ];
   const container = document.querySelector("#content");
   const nextBtn = document.querySelector("#next");
-  const prevBtn = document.querySelector("#prev");
+  const prevBtn = document.querySelector("#previous");
 
   nextBtn.addEventListener("click", function (event) {
     event.preventDefault();
@@ -19,6 +19,25 @@
     if (currentImage > myphotos.length - 1) {
       currentImage = 0;
     }
+
+    let newSlide = document.createElement("img");
+    newSlide.className = "fadeinimg";
+    newSlide.src = `slides/${myphotos[currentImage]}`;
+    container.appendChild(newSlide);
+
+    if (container.children.length > 2) {
+      container.removeChild(container.children[0]);
+    }
+  });
+
+  prevBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    currentImage--;
+    if (currentImage < 0) {
+      currentImage = myphotos.length - 1;
+    }
+
     let newSlide = document.createElement("img");
     newSlide.className = "fadeinimg";
     newSlide.src = `slides/${myphotos[currentImage]}`;
